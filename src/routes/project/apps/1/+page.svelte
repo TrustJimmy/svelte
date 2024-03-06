@@ -23,7 +23,7 @@
 <h1>My to-do list</h1>
 
 <script>
-    import icon from '../../../../components/icon.svelte';
+    import Icon from '../../../../components/icon.svelte';
     let newItem = "";
     let todoList = [];
     function add() {
