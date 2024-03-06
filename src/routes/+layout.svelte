@@ -2,9 +2,9 @@
     <div class="nav-container">
         <a href="/" class="nav-logo" title="Back to Homepage">Ксения Пичугина</a>
         <div class="nav-links">
-            {#if link.isShow}
+            {#each nav as link}
                 <a href={link.href} class="link">{link.title}</a>
-            {/if}
+            {/each}
         </div>
     </div>
 </nav>
@@ -16,28 +16,23 @@
         const nav = [
             {
                 title: 'Обо мне',
-                href: '/about',
-                isShow: true,
+                href: '/about'
             },
             {
                 title: 'Блог',
-                href: '/blog',
-                isShow: true,
+                href: '/blog'
             },
             {
                 title: 'Портфолио',
-                href: '/project',
-                isShow: true,
+                href: '/project'
             },
             {
                 title: 'Контакты',
-                href: '/contact',
-                isShow: true,
+                href: '/contact'
             },
             {
                 title: 'temp',
-                href: '/temp',
-                isShow: false,
+                href: '/temp'
             }
         ]
     </script>
