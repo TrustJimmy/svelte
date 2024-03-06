@@ -1,3 +1,5 @@
+<h1>My to-do list</h1>
+
 <main>
     <form on:submit|preventDefault={add}>
         <input bind:value={newItem} placeholder="Enter to-do" />
@@ -19,8 +21,6 @@
         {/each}
     </div>
 </main>
-
-<h1>My to-do list</h1>
 
 <script>
     import Icon from '../../../../components/icon.svelte';
