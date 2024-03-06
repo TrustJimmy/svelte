@@ -21,7 +21,7 @@
     </form>
 </main>
 <style>
-    main {
+    .main {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -30,7 +30,7 @@
         box-sizing: border-box;
         background: antiquewhite;
     }
-    form {
+    .form {
         width: 100%;
         max-width: 500px;
         display: flex;
