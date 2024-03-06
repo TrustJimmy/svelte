@@ -9,12 +9,10 @@
                 <span class="todo_text">{item.task}</span>
                 <div class="todo_buttons">
                     <button class="complete" on:click={() => complete(index)}>
-                        <!-- svelte-ignore missing-declaration -->
-                        <Icon name="check-mark" />
+                        <icon name="check-mark" />
                     </button>
                     <button class="delete" on:click={() => remove(index)}>
-                        <!-- svelte-ignore missing-declaration -->
-                        <Icon name="delete" />
+                        <icon name="delete" />
                     </button>
                 </div>
                 </div>            
