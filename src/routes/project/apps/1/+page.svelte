@@ -9,10 +9,10 @@
                 <span class="todo_text">{item.task}</span>
                 <div class="todo_buttons">
                     <button class="complete" on:click={() => complete(index)}>
-                        <icon name="check-mark" />
+                        <Icon name="check-mark" />
                     </button>
                     <button class="delete" on:click={() => remove(index)}>
-                        <icon name="delete" />
+                        <Icon name="delete" />
                     </button>
                 </div>
                 </div>            
