@@ -23,7 +23,7 @@
 <h1>My to-do list</h1>
 
 <script>
-    import Icon from '../../../../components/icon.svelte';
+    import icon from '../../../../components/icon.svelte';
     let newItem = "";
     let todoList = [];
     function add() {
@@ -38,7 +38,6 @@
             newItem = "";
         }
     }
-    import icon from '../../../../components/icon.svelte';
 
     function remove(index) {
         todoList.splice(index, 1);
