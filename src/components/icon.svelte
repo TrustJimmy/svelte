@@ -3,11 +3,11 @@
     const icons = [
         {
         name:'check-mark',
-        path: '<path fill="currentColor">✅</path>',
+        path: '<path>✅</path>',
         },
         {
         name:'delete',
-        path: '<path fill="currentColor">🗑️</path>',
+        path: '<path>🗑️</path>',
         },
     ];
     let Icon = icons.find((item) => item.name === name);
