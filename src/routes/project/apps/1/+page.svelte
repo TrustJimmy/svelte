@@ -10,10 +10,10 @@
             <div class="todo" class:comleted={item.completed}>
                 <span class="todo_text">{item.task}</span>
                 <div class="todo_buttons">
-                    <button class="completed" on:click={() => complete(index)}>
+                    <button class="complete" on:click={() => complete(index)}>
                         <Icon name="check-mark" />
                     </button>
-                    <button class="remove" on:click={() => remove(index)}>
+                    <button class="delete" on:click={() => remove(index)}>
                         <Icon name="delete" />
                     </button>
                 </div>
@@ -108,11 +108,11 @@
         background-color: transparent;
         border: none;
     }
-    button.remove, button.remove:hover {
+    button.delete, button.delete:hover {
         color: brown;
         transition: color 100ms ease-out;
     }
-    button.completed, button.completed:hover {
+    button.complete, button.complete:hover {
         color: cadetblue;
         transition: color 100ms ease-out;
     }
