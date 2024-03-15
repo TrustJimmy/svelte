@@ -7,15 +7,11 @@
     </form>
     <div class="todos">
         {#each todoList as item, index}
-            <div class="todo" class:comleted={item.completed}>
+            <div class="todo" class:completed={item.completed}>
                 <span class="todo_text">{item.task}</span>
                 <div class="todo_buttons">
-                    <button class="complete" on:click={() => complete(index)}>
-                        <Icon name="check-mark" />
-                    </button>
-                    <button class="delete" on:click={() => remove(index)}>
-                        <Icon name="delete" />
-                    </button>
+                    <button class="complete" on:click={() => complete(index)}><span>✔</span></button>
+                    <button class="delete" on:click={() => remove(index)}><span>🗑️</span></button>
                 </div>
                 </div>            
         {/each}
@@ -23,7 +19,6 @@
 </main>
 
 <script>
-    import Icon from '../../../../components/icon.svelte';
     let newItem = "";
     let todoList = [];
     function add() {
@@ -80,8 +75,8 @@
         display: flex;
         padding: 20px;
         border-radius: 20px;
-        box-shadow: 0 0 15px rgb(0, 0, 0/20%);
-        background-color: hsla(0%, 0%, 100%, 0.2);
+        box-shadow: 0 0 15px rgb(0, 0, 0 / 20%);
+        background-color: hsla(0, 0%, 100%, 0.2);
         margin-top: 1rem;
         font-size: 1.2rem;
         justify-content: space-between;
@@ -116,13 +111,13 @@
         color: cadetblue;
         transition: color 100ms ease-out;
     }
-    .todo.comleted {
+    .todo.completed {
         color: slategray;
     }
-    .todo.comleted .todo_text {
+    .todo.completed .todo_text {
         text-decoration: line-through;
     }
-    .todo.comleted button {
+    .todo.completed button {
         color: silver;
     }
     .todos {
